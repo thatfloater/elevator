@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="雙北電梯加蓋專業顧問｜王專案。舊公寓加裝電梯、免費到府勘查估價，協助住戶共識、補助申請，全程陪伴。屋齡20年以上、6樓以下公寓均可洽詢。">
+<title>雙北電梯加蓋顧問｜王專案 免費估價諮詢</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --ink: #1a1a18; --ink-light: #4a4a45; --ink-muted: #8a8a82;
+  --gold: #b8975a; --gold-light: #d4b57a;
+  --cream: #f7f4ee; --cream-dark: #ede9e0;
+  --white: #fdfcf9; --border: rgba(26,26,24,0.12);
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Noto Sans TC', sans-serif; background: var(--white); color: var(--ink); font-weight: 300; line-height: 1.8; font-size: 15px; }
+
+/* ── HEADER ── */
+header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(253,252,249,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 2rem; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-family: 'Noto Serif TC', serif; font-size: 15px; font-weight: 600; letter-spacing: 0.15em; color: var(--ink); }
+.logo span { color: var(--gold); margin-left: 6px; }
+.header-cta { background: var(--ink); color: var(--white); border: none; padding: 8px 20px; font-family: 'Noto Sans TC', sans-serif; font-size: 13px; font-weight: 400; letter-spacing: 0.08em; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s; }
+.header-cta:hover { background: var(--gold); }
+
+/* ── HERO ── */
+.hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 60px; }
+.hero-left { background: var(--cream); display: flex; flex-direction: column; justify-content: center; padding: 80px 60px 80px 80px; position: relative; overflow: hidden; }
+.hero-left::before { content: '電梯'; position: absolute; top: -20px; right: -30px; font-family: 'Noto Serif TC', serif; font-size: 180px; font-weight: 700; color: rgba(26,26,24,0.04); line-height: 1; pointer-events: none; user-select: none; }
+.eyebrow { font-size: 11px; letter-spacing: 0.25em; color: var(--gold); text-transform: uppercase; margin-bottom: 28px; font-weight: 500; }
+h1 { font-family: 'Noto Serif TC', serif; font-size: clamp(32px, 4vw, 52px); font-weight: 700; line-height: 1.3; margin-bottom: 24px; letter-spacing: 0.02em; }
+h1 em { font-style: normal; color: var(--gold); border-bottom: 2px solid var(--gold-light); }
+.hero-desc { color: var(--ink-light); font-size: 15px; line-height: 1.9; max-width: 380px; margin-bottom: 48px; }
+.hero-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.btn-primary { background: var(--ink); color: var(--white); border: none; padding: 14px 32px; font-family: 'Noto Sans TC', sans-serif; font-size: 14px; font-weight: 400; letter-spacing: 0.1em; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s, transform 0.15s; }
+.btn-primary:hover { background: var(--gold); transform: translateY(-1px); }
+.btn-tel { color: var(--ink); text-decoration: none; font-size: 14px; letter-spacing: 0.05em; border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: border-color 0.2s, color 0.2s; }
+.btn-tel:hover { color: var(--gold); border-color: var(--gold); }
+.hero-right { background: var(--ink); display: flex; flex-direction: column; justify-content: center; padding: 60px; position: relative; overflow: hidden; gap: 48px; align-items: center; }
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.1); width: 100%; }
+.stat-item { background: var(--ink); padding: 28px 24px; border: 1px solid rgba(255,255,255,0.06); }
+.stat-num { font-family: 'Noto Serif TC', serif; font-size: 36px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 8px; }
+.stat-label { font-size: 12px; color: rgba(255,255,255,0.5); letter-spacing: 0.1em; }
+
+/* ── SECTION ── */
+section { padding: 100px 80px; }
+.section-tag { font-size: 10px; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; font-weight: 500; margin-bottom: 16px; display: block; }
+h2 { font-family: 'Noto Serif TC', serif; font-size: clamp(24px, 3vw, 38px); font-weight: 700; line-height: 1.4; margin-bottom: 48px; letter-spacing: 0.02em; }
+
+/* ── 補助資格 ── */
+.qualify { background: var(--cream); }
+.qualify-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.qualify-cards { display: flex; flex-direction: column; gap: 16px; }
+.qualify-card { background: var(--white); border: 1px solid var(--border); padding: 24px 28px; }
+.qualify-card.no { border-left: 3px solid #c94f4f; }
+.qualify-card.yes { border-left: 3px solid var(--gold); }
+.qualify-label { font-size: 10px; letter-spacing: 0.2em; font-weight: 500; margin-bottom: 6px; }
+.qualify-card.yes .qualify-label { color: var(--gold); }
+.qualify-card.no .qualify-label { color: #c94f4f; }
+.qualify-card strong { display: block; font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+.qualify-card p { font-size: 13px; color: var(--ink-muted); line-height: 1.7; }
+
+/* ── 費用 ── */
+.cost { background: var(--white); }
+.cost-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 40px; }
+.cost-item { background: var(--white); padding: 32px 28px; text-align: center; }
+.cost-type { font-size: 12px; letter-spacing: 0.15em; color: var(--ink-muted); margin-bottom: 12px; }
+.cost-range { font-family: 'Noto Serif TC', serif; font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+.cost-detail { font-size: 12px; color: var(--ink-muted); line-height: 1.6; }
+.subsidy-bar { background: var(--cream); border: 1px solid var(--border); padding: 28px 36px; display: flex; align-items: center; gap: 24px; }
+.subsidy-bar .s-label { font-size: 11px; letter-spacing: 0.2em; color: var(--gold); font-weight: 500; min-width: 80px; }
+.subsidy-bar .s-body strong { font-size: 16px; font-weight: 500; display: block; margin-bottom: 4px; }
+.subsidy-bar .s-body p { font-size: 13px; color: var(--ink-muted); }
+
+/* ── About ── */
+.about { background: var(--cream); display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.about-text p { color: var(--ink-light); margin-bottom: 20px; line-height: 1.9; }
+.about-points { display: flex; flex-direction: column; gap: 28px; }
+.point { display: flex; gap: 20px; align-items: flex-start; }
+.point-num { font-family: 'Noto Serif TC', serif; font-size: 28px; font-weight: 700; color: var(--cream-dark); line-height: 1; min-width: 36px; }
+.point-body strong { display: block; font-size: 14px; font-weight: 500; margin-bottom: 4px; color: var(--ink); }
+.point-body p { font-size: 13px; color: var(--ink-muted); line-height: 1.7; }
+
+/* ── Process ── */
+.process { background: var(--white); }
+.process-steps { display: grid; grid-template-columns: repeat(5,1fr); gap: 0; position: relative; margin-top: 60px; }
+.process-steps::before { content: ''; position: absolute; top: 28px; left: 10%; right: 10%; height: 1px; background: var(--border); z-index: 0; }
+.step { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 12px; position: relative; z-index: 1; }
+.step-icon { width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; background: var(--white); border: 1px solid var(--border); border-radius: 50%; margin-bottom: 20px; }
+.step-title { font-size: 13px; font-weight: 500; margin-bottom: 6px; letter-spacing: 0.05em; }
+.step-desc { font-size: 11px; color: var(--ink-muted); line-height: 1.6; }
+
+/* ── FAQ ── */
+.faq { background: var(--cream); }
+.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); }
+.faq-item { background: var(--cream); padding: 32px 36px; }
+.faq-q { font-family: 'Noto Serif TC', serif; font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--ink); line-height: 1.5; }
+.faq-a { font-size: 13px; color: var(--ink-light); line-height: 1.8; }
+
+/* ── Form ── */
+.inquiry { background: var(--ink); padding: 100px 80px; }
+.inquiry h2 { color: var(--white); }
+.inquiry .section-tag { color: var(--gold); }
+.form-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.form-intro { color: rgba(255,255,255,0.55); line-height: 1.9; font-size: 14px; }
+.form-intro strong { color: var(--gold); font-weight: 500; }
+.contact-direct { margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); }
+.contact-direct p { font-size: 12px; letter-spacing: 0.15em; color: rgba(255,255,255,0.3); margin-bottom: 12px; }
+.contact-direct a { color: var(--white); text-decoration: none; font-size: 22px; font-family: 'Noto Serif TC', serif; font-weight: 600; letter-spacing: 0.05em; transition: color 0.2s; }
+.contact-direct a:hover { color: var(--gold); }
+.form-fields { display: flex; flex-direction: column; gap: 16px; }
+.field-group { display: flex; flex-direction: column; gap: 6px; }
+.field-group label { font-size: 11px; letter-spacing: 0.2em; color: rgba(255,255,255,0.4); }
+.field-group input, .field-group select, .field-group textarea { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: var(--white); padding: 12px 16px; font-family: 'Noto Sans TC', sans-serif; font-size: 14px; font-weight: 300; outline: none; transition: border-color 0.2s; width: 100%; appearance: none; }
+.field-group select option { background: #1a1a18; color: #fff; }
+.field-group input::placeholder, .field-group textarea::placeholder { color: rgba(255,255,255,0.2); }
+.field-group input:focus, .field-group select:focus, .field-group textarea:focus { border-color: var(--gold); }
+.field-group textarea { resize: vertical; min-height: 100px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.btn-submit { background: var(--gold); color: var(--ink); border: none; padding: 16px 40px; font-family: 'Noto Sans TC', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 0.12em; cursor: pointer; width: 100%; margin-top: 8px; transition: background 0.2s, transform 0.15s; }
+.btn-submit:hover { background: var(--gold-light); transform: translateY(-1px); }
+.btn-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+.success-msg { display: none; background: rgba(184,151,90,0.15); border: 1px solid var(--gold); padding: 16px 20px; color: var(--gold); font-size: 13px; letter-spacing: 0.05em; text-align: center; margin-top: 12px; }
+.error-msg { display: none; background: rgba(201,79,79,0.15); border: 1px solid #c94f4f; padding: 16px 20px; color: #f08080; font-size: 13px; letter-spacing: 0.05em; text-align: center; margin-top: 12px; }
+
+footer { background: #111; padding: 40px 80px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.06); }
+.footer-logo { font-family: 'Noto Serif TC', serif; font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.5); letter-spacing: 0.15em; }
+.footer-note { font-size: 11px; color: rgba(255,255,255,0.2); letter-spacing: 0.1em; }
+
+/* ── 動畫 ICONS ── */
+
+/* 電梯 */
+.elevator-shaft { width: 32px; height: 48px; border: 2px solid var(--gold); border-radius: 3px; position: relative; overflow: hidden; }
+.elevator-car { position: absolute; left: 3px; right: 3px; height: 16px; background: var(--gold); border-radius: 2px; animation: elevatorMove 2.4s ease-in-out infinite; }
+.elevator-door-l, .elevator-door-r { position: absolute; top: 2px; bottom: 2px; width: 5px; background: var(--cream); border-radius: 1px; opacity: 0; animation: doorAnim 2.4s ease-in-out infinite; }
+.elevator-door-l { left: 3px; transform-origin: left; }
+.elevator-door-r { right: 3px; transform-origin: right; }
+@keyframes elevatorMove { 0%,30%{bottom:3px}50%,70%{bottom:26px}90%,100%{bottom:3px} }
+@keyframes doorAnim { 0%,32%{opacity:0;transform:scaleX(0)}36%,48%{opacity:1;transform:scaleX(1)}55%,100%{opacity:0;transform:scaleX(0)} }
+
+/* 放大鏡 */
+.magnifier-wrap { position: relative; width: 40px; height: 40px; }
+.mag-svg { animation: magScan 3s ease-in-out infinite; }
+.mag-pulse { position: absolute; width: 24px; height: 24px; border-radius: 50%; border: 1.5px solid var(--gold); top: 4px; left: 4px; animation: magPulse 3s ease-in-out infinite; }
+@keyframes magScan { 0%,100%{transform:translate(0,0) rotate(-8deg)}35%{transform:translate(5px,-3px) rotate(5deg)}65%{transform:translate(-3px,3px) rotate(-4deg)} }
+@keyframes magPulse { 0%,100%{opacity:.3;transform:scale(.8)}50%{opacity:.8;transform:scale(1.15)} }
+
+/* 握手 */
+.hs-group { animation: hsShake 2.4s ease-in-out infinite; }
+.hs-left { animation: hsLeft 2.4s ease-in-out infinite; }
+.hs-right { animation: hsRight 2.4s ease-in-out infinite; }
+.hs-spark { opacity: 0; animation: hsSpark 2.4s ease-in-out infinite; }
+.hs-spark:nth-child(2){ animation-delay:.08s }
+.hs-spark:nth-child(3){ animation-delay:.16s }
+.hs-spark:nth-child(4){ animation-delay:.24s }
+@keyframes hsLeft { 0%,100%{transform:translateX(-8px)}40%,60%{transform:translateX(0)} }
+@keyframes hsRight { 0%,100%{transform:translateX(8px)}40%,60%{transform:translateX(0)} }
+@keyframes hsShake { 0%,35%,65%,100%{transform:rotate(0deg)}42%{transform:rotate(-2deg)}48%{transform:rotate(2deg)}54%{transform:rotate(-1.5deg)}60%{transform:rotate(0deg)} }
+@keyframes hsSpark { 0%,38%{opacity:0;transform:scale(.4)}50%{opacity:1;transform:scale(1.1)}70%{opacity:.5;transform:scale(1)}85%,100%{opacity:0;transform:scale(.6)} }
+
+/* 金幣 */
+.coin-base { position: relative; width: 44px; height: 52px; display: flex; align-items: flex-end; justify-content: center; }
+.coin-main { width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: var(--gold); background: rgba(184,151,90,.08); }
+.coin-fly { position: absolute; width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid var(--gold); background: rgba(184,151,90,.15); display: flex; align-items: center; justify-content: center; font-size: 9px; color: var(--gold); font-weight: 700; animation: coinUp 2.2s ease-in-out infinite; }
+.coin-fly:nth-child(2){animation-delay:.3s}
+.coin-fly:nth-child(3){animation-delay:.6s}
+@keyframes coinUp { 0%{bottom:8px;left:13px;opacity:0;transform:scale(.6)}20%{opacity:1}60%{bottom:42px;left:18px;opacity:1;transform:scale(1)}100%{bottom:50px;left:22px;opacity:0;transform:scale(.8)} }
+
+/* 信封 */
+.env-wrap { position: relative; width: 52px; height: 40px; animation: envShake 3s ease-in-out infinite; }
+.env-body { width: 100%; height: 100%; border: 2px solid var(--gold); border-radius: 3px; position: relative; }
+.env-flap { position: absolute; top: -1px; left: -1px; right: -1px; height: 20px; border-bottom: 2px solid var(--gold); clip-path: polygon(0 0,50% 100%,100% 0); background: rgba(184,151,90,.15); }
+.env-text { position: absolute; bottom: 4px; left: 0; right: 0; text-align: center; font-size: 9px; color: var(--gold); font-weight: 500; letter-spacing: .05em; }
+.env-arrow { position: absolute; top: -16px; right: -6px; font-size: 14px; color: var(--gold); animation: envArrow 3s ease-in-out infinite; }
+@keyframes envShake { 0%,60%,100%{transform:rotate(0)}65%{transform:rotate(-3deg)}70%{transform:rotate(3deg)}75%{transform:rotate(-2deg)}80%{transform:rotate(0)} }
+@keyframes envArrow { 0%,50%{transform:translate(0,0);opacity:0}62%{transform:translate(0,0);opacity:1}82%{transform:translate(8px,-8px);opacity:1}100%{transform:translate(14px,-14px);opacity:0} }
+
+/* 電話 */
+.phone-wrap { position: relative; width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; }
+.phone-svg { animation: phoneRing 2s ease-in-out infinite; }
+.ring { position: absolute; border-radius: 50%; border: 1.5px solid var(--gold); opacity: 0; animation: ringOut 2s ease-in-out infinite; }
+.ring:nth-child(2){width:40px;height:40px;animation-delay:0s}
+.ring:nth-child(3){width:50px;height:50px;animation-delay:.25s}
+.ring:nth-child(4){width:60px;height:60px;animation-delay:.5s}
+@keyframes phoneRing { 0%,70%,100%{transform:rotate(0)}72%{transform:rotate(-10deg)}74%{transform:rotate(10deg)}76%{transform:rotate(-7deg)}78%{transform:rotate(7deg)}80%{transform:rotate(0)} }
+@keyframes ringOut { 0%{transform:scale(.5);opacity:.7}100%{transform:scale(1.3);opacity:0} }
+
+@media (max-width: 768px) {
+  header { padding: 0 20px; }
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-left { padding: 60px 28px; }
+  .hero-right { display: none; }
+  section { padding: 64px 28px; }
+  .qualify-inner, .about { grid-template-columns: 1fr; gap: 40px; }
+  .cost-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .process-steps::before { display: none; }
+  .faq-grid { grid-template-columns: 1fr; }
+  .form-layout { grid-template-columns: 1fr; gap: 40px; }
+  .inquiry { padding: 64px 28px; }
+  .form-row { grid-template-columns: 1fr; }
+  footer { flex-direction: column; gap: 12px; padding: 32px 28px; text-align: center; }
+  .subsidy-bar { flex-direction: column; gap: 12px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">王專案<span>電梯顧問</span></div>
+  <a href="#inquiry" class="header-cta">免費諮詢</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <span class="eyebrow">雙北地區 · 電梯加蓋專業顧問</span>
+    <h1>讓老公寓<br>也能有<em>電梯</em></h1>
+    <p class="hero-desc">
+      從資格確認、住戶共識、補助申請，到專業施工團隊銜接，王專案陪您走完每一步——讓您不必自己面對複雜的法規與程序。
+    </p>
+    <div class="hero-actions">
+      <a href="#inquiry" class="btn-primary">立即免費估價</a>
+      <a href="tel:0928086897" class="btn-tel">📞 0928-086-897</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <!-- 電梯動畫 Hero Icon -->
+    <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+      <div class="elevator-shaft">
+        <div class="elevator-car">
+          <div class="elevator-door-l"></div>
+          <div class="elevator-door-r"></div>
+        </div>
+      </div>
+      <span style="font-size:11px;color:rgba(255,255,255,0.3);letter-spacing:.15em;">ELEVATOR</span>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-num">300萬</div>
+        <div class="stat-label">台北市補助上限</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">50%</div>
+        <div class="stat-label">最高補助比例</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">免費</div>
+        <div class="stat-label">到府勘查估價</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">雙北</div>
+        <div class="stat-label">服務範圍</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 補助資格 -->
+<section class="qualify">
+  <div class="qualify-inner">
+    <div>
+      <span class="section-tag">申請資格</span>
+      <h2>您的大樓<br>符合條件嗎？</h2>
+      <p style="color:var(--ink-light);line-height:1.9;margin-bottom:20px;">依台北市補助規範，符合以下條件的老舊公寓均可申請電梯增設補助。不確定是否符合，歡迎直接詢問王專案，免費為您初步評估。</p>
+      <p style="color:var(--ink-muted);font-size:13px;line-height:1.9;">新北市亦有相關補助方案，詳情可來電諮詢。</p>
+    </div>
+    <div class="qualify-cards">
+      <div class="qualify-card yes">
+        <div class="qualify-label">✓ 符合條件</div>
+        <strong>6 樓以下無電梯集合住宅</strong>
+        <p>住宅使用比例達全棟 1/2 以上，屋齡達 20 年以上，並持有使用執照或營造執照。</p>
+      </div>
+      <div class="qualify-card yes">
+        <div class="qualify-label">✓ 符合條件</div>
+        <strong>非高級住宅</strong>
+        <p>房地總價未達 8,000 萬元（非台北市稅捐稽徵處認定之高級住宅）即符合資格。</p>
+      </div>
+      <div class="qualify-card yes">
+        <div class="qualify-label">✓ 符合條件</div>
+        <strong>住戶過半數同意即可申請建照</strong>
+        <p>申請建築許可只需土地及建物所有權人數及產權面積過半同意，無須 100% 全體同意。</p>
+      </div>
+      <div class="qualify-card no">
+        <div class="qualify-label">✗ 不符合</div>
+        <strong>海砂屋或已獲補助者</strong>
+        <p>已列管須拆除重建的海砂屋，或同一棟建築已獲核准補助者，不得重複申請。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 費用 -->
+<section class="cost">
+  <span class="section-tag">費用參考</span>
+  <h2>增設電梯大約要多少錢？</h2>
+  <div class="cost-grid">
+    <div class="cost-item">
+      <div class="cost-type">3 人座（5 層樓）</div>
+      <div class="cost-range">約 500–700 萬</div>
+      <div class="cost-detail">機廂空間 90×120 cm<br>昇降機道 150×150 cm</div>
+    </div>
+    <div class="cost-item">
+      <div class="cost-type">6 人座（5 層樓）</div>
+      <div class="cost-range">約 600–800 萬</div>
+      <div class="cost-detail">機廂空間 100×120 cm<br>昇降機道 160×170 cm</div>
+    </div>
+    <div class="cost-item">
+      <div class="cost-type">8 人座（5 層樓）</div>
+      <div class="cost-range">約 700–850 萬</div>
+      <div class="cost-detail">機廂空間 150×150 cm<br>昇降機道 210×220 cm</div>
+    </div>
+  </div>
+  <div class="subsidy-bar">
+    <div class="s-label">台北市補助</div>
+    <div class="s-body">
+      <strong>每棟最高補助 300 萬元，補助比例最高達工程費用 50%</strong>
+      <p>配合拆除法定空地建物整修者可提高至 60%。整建住宅或山坡地地區最高可達 80%。實際費用依個案現場評估而定。</p>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about">
+  <div class="about-text">
+    <span class="section-tag">為什麼需要顧問</span>
+    <h2>電梯加蓋不只是<br>施工這麼簡單</h2>
+    <p>增設電梯涉及建築許可、住戶共識、法規申請等複雜程序，許多案子在中途才發現問題，導致時間與費用大幅超支。</p>
+    <p>從台北市成功案例觀察，前期作業時程至少需 4 個月以上，全程約需 2 年。越早啟動評估，越能把握補助申請時機。</p>
+  </div>
+  <div class="about-points">
+    <div class="point">
+      <div class="point-num">01</div>
+      <div class="point-body">
+        <strong>資格初步評估</strong>
+        <p>確認屋齡、樓層、使用執照狀況是否符合補助條件，避免白費力氣。</p>
+      </div>
+    </div>
+    <div class="point">
+      <div class="point-num">02</div>
+      <div class="point-body">
+        <strong>現場勘查評估</strong>
+        <p>到府確認建築結構、電梯型式適合性（外牆附掛型或室內增設型），提供初步費用區間。</p>
+      </div>
+    </div>
+    <div class="point">
+      <div class="point-num">03</div>
+      <div class="point-body">
+        <strong>住戶共識協助</strong>
+        <p>協助準備住戶大會說明資料。建照申請只需過半數同意，協助您有效率地達成共識。</p>
+      </div>
+    </div>
+    <div class="point">
+      <div class="point-num">04</div>
+      <div class="point-body">
+        <strong>全程專業銜接</strong>
+        <p>協助了解台北市、新北市補助方案申請程序，由專業施工團隊完整承接後續工程。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="process">
+  <span class="section-tag">服務流程</span>
+  <h2>從諮詢到完工的步驟</h2>
+  <div class="process-steps">
+
+    <!-- 步驟1：線上詢價（信封） -->
+    <div class="step">
+      <div class="step-icon">
+        <div style="position:relative;width:44px;height:44px;display:flex;align-items:center;justify-content:center;">
+          <div class="env-wrap" style="width:34px;height:26px;">
+            <div class="env-body">
+              <div class="env-flap"></div>
+              <div class="env-text">詢</div>
+            </div>
+            <div class="env-arrow">➤</div>
+          </div>
+        </div>
+      </div>
+      <div class="step-title">線上詢價</div>
+      <div class="step-desc">填表提供基本建築資訊，初步評估資格可行性</div>
+    </div>
+
+    <!-- 步驟2：現場勘查（放大鏡） -->
+    <div class="step">
+      <div class="step-icon">
+        <div class="magnifier-wrap">
+          <div class="mag-pulse"></div>
+          <svg class="mag-svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <circle cx="15" cy="15" r="9" stroke="#b8975a" stroke-width="2" fill="none"/>
+            <line x1="21" y1="21" x2="31" y2="31" stroke="#b8975a" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="step-title">現場勘查</div>
+      <div class="step-desc">到府評估結構、空間，提供電梯型式與費用建議</div>
+    </div>
+
+    <!-- 步驟3：住戶共識（握手SVG） -->
+    <div class="step">
+      <div class="step-icon">
+        <svg width="44" height="44" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:40px;height:40px;">
+          <g class="hs-group">
+            <g class="hs-left">
+              <rect x="4" y="34" width="16" height="9" rx="3" fill="#b8975a" opacity="0.25"/>
+              <rect x="17" y="32" width="13" height="9" rx="3.5" fill="none" stroke="#b8975a" stroke-width="2"/>
+              <rect x="19" y="27" width="4.5" height="8" rx="2.2" fill="none" stroke="#b8975a" stroke-width="1.7"/>
+              <rect x="24.5" y="25" width="4.5" height="9" rx="2.2" fill="none" stroke="#b8975a" stroke-width="1.7"/>
+              <rect x="30" y="26" width="3.5" height="8" rx="1.8" fill="none" stroke="#b8975a" stroke-width="1.7"/>
+            </g>
+            <g class="hs-right">
+              <rect x="52" y="34" width="16" height="9" rx="3" fill="#b8975a" opacity="0.25"/>
+              <rect x="42" y="32" width="13" height="9" rx="3.5" fill="none" stroke="#b8975a" stroke-width="2"/>
+              <rect x="44" y="27" width="3.5" height="8" rx="1.8" fill="none" stroke="#b8975a" stroke-width="1.7"/>
+              <rect x="42" y="25" width="4.5" height="9" rx="2.2" fill="none" stroke="#b8975a" stroke-width="1.7"/>
+              <rect x="37" y="26" width="4.5" height="8" rx="2.2" fill="none" stroke="#b8975a" stroke-width="1.7"/>
+            </g>
+          </g>
+          <line class="hs-spark" x1="36" y1="18" x2="36" y2="12" stroke="#d4b57a" stroke-width="2" stroke-linecap="round"/>
+          <line class="hs-spark" x1="44" y1="20" x2="48" y2="14" stroke="#d4b57a" stroke-width="2" stroke-linecap="round"/>
+          <line class="hs-spark" x1="28" y1="20" x2="24" y2="14" stroke="#d4b57a" stroke-width="2" stroke-linecap="round"/>
+          <line class="hs-spark" x1="36" y1="15" x2="36" y2="9" stroke="#b8975a" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="step-title">住戶共識</div>
+      <div class="step-desc">協助召開區分所有權人會議，取得過半數同意</div>
+    </div>
+
+    <!-- 步驟4：申請建照（文件） -->
+    <div class="step">
+      <div class="step-icon">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="animation: docAnim 3s ease-in-out infinite;">
+          <rect x="6" y="3" width="20" height="26" rx="2" stroke="#b8975a" stroke-width="2" fill="none"/>
+          <line x1="10" y1="10" x2="22" y2="10" stroke="#b8975a" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+          <line x1="10" y1="15" x2="22" y2="15" stroke="#b8975a" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+          <line x1="10" y1="20" x2="17" y2="20" stroke="#b8975a" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+          <circle cx="26" cy="27" r="8" fill="#b8975a" opacity="0.15" stroke="#b8975a" stroke-width="1.5"/>
+          <polyline points="22,27 25,30 30,24" stroke="#b8975a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+      <div class="step-title">申請建照</div>
+      <div class="step-desc">委託建築師申請雜項執照或變更使用許可</div>
+    </div>
+
+    <!-- 步驟5：補助申請（金幣） -->
+    <div class="step">
+      <div class="step-icon">
+        <div style="position:relative;width:44px;height:44px;display:flex;align-items:flex-end;justify-content:center;">
+          <div class="coin-base">
+            <div class="coin-fly">¥</div>
+            <div class="coin-fly">¥</div>
+            <div class="coin-fly">¥</div>
+            <div class="coin-main">補</div>
+          </div>
+        </div>
+      </div>
+      <div class="step-title">補助申請</div>
+      <div class="step-desc">備齊文件向台北市都市更新處申請電梯補助許可</div>
+    </div>
+
+  </div>
+
+  <div class="process-steps" style="margin-top:32px;">
+    <div class="step">
+      <div class="step-icon">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect x="4" y="8" width="28" height="20" rx="2" stroke="#b8975a" stroke-width="2" fill="none"/>
+          <line x1="4" y1="14" x2="32" y2="14" stroke="#b8975a" stroke-width="1.5" opacity="0.5"/>
+          <circle cx="18" cy="22" r="3" stroke="#b8975a" stroke-width="1.8" fill="none" style="animation: spinDot 2s linear infinite;"/>
+          <line x1="18" y1="3" x2="18" y2="8" stroke="#b8975a" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+          <line x1="26" y1="5" x2="24" y2="9" stroke="#b8975a" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="step-title">工程施工</div>
+      <div class="step-desc">專業施工團隊進場，電梯設備安裝</div>
+    </div>
+    <div class="step">
+      <div class="step-icon">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect x="5" y="5" width="26" height="26" rx="13" stroke="#b8975a" stroke-width="2" fill="none" opacity="0.3"/>
+          <polyline points="11,18 16,23 25,13" stroke="#b8975a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" style="animation: checkDraw 2s ease-in-out infinite;"/>
+        </svg>
+      </div>
+      <div class="step-title">竣工檢查</div>
+      <div class="step-desc">申請竣工檢查，取得昇降設備使用許可證</div>
+    </div>
+    <div class="step">
+      <div class="step-icon">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect x="5" y="4" width="22" height="28" rx="2" stroke="#b8975a" stroke-width="2" fill="none"/>
+          <line x1="9" y1="11" x2="23" y2="11" stroke="#b8975a" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+          <line x1="9" y1="16" x2="23" y2="16" stroke="#b8975a" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+          <line x1="9" y1="21" x2="18" y2="21" stroke="#b8975a" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+          <circle cx="28" cy="28" r="7" fill="rgba(184,151,90,0.15)" stroke="#b8975a" stroke-width="1.5"/>
+          <line x1="28" y1="24" x2="28" y2="28" stroke="#b8975a" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="28" y1="30" x2="28" y2="31" stroke="#b8975a" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="step-title">領取執照</div>
+      <div class="step-desc">取得使用執照，可申辦產權登記</div>
+    </div>
+    <div class="step" style="grid-column:4/span 2;justify-self:center;min-width:160px;">
+      <div class="step-icon">
+        <div class="phone-wrap" style="width:44px;height:44px;">
+          <div class="ring" style="width:30px;height:30px;"></div>
+          <div class="ring" style="width:38px;height:38px;animation-delay:.25s"></div>
+          <div class="ring" style="width:44px;height:44px;animation-delay:.5s"></div>
+          <svg class="phone-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8975a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.8 12.8 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.8 12.8 0 002.81.7A2 2 0 0122 14.92z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="step-title">領取補助款</div>
+      <div class="step-desc">向都市更新處請領補助款，完工結案</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <span class="section-tag">常見問題</span>
+  <h2>您最想知道的事</h2>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <div class="faq-q">需要全體住戶 100% 同意嗎？</div>
+      <div class="faq-a">申請建築許可（雜項執照）只需土地及建物所有權人「人數過半且產權面積過半」同意即可，無需 100% 全體同意。若應有部分合計超過三分之二，更可免計人數。申請補助則原則需全體同意，但可以區分所有權人會議決議紀錄代替。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">費用大概是多少？住戶怎麼分攤？</div>
+      <div class="faq-a">以5層樓3人座電梯為例，總工程費約 500–700 萬元。台北市補助最高 300 萬元（約 50%），其餘由住戶自行分攤。分攤方式可依共有應有部分比例，或由住戶協議，例如頂樓住戶多分攤、其餘均分等，均有實際成功案例可參考。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">台北市補助申請流程是什麼？</div>
+      <div class="faq-a">取得建築許可後，備齊申請書、所有權人同意書（或區分所有權人會議紀錄）、管委會報備文件、廠商報價單等，向台北市都市更新處提出申請。審查通過後核發補助核准函，工程完工取得使用許可後再向更新處請領補助款。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">我的大樓結構適合加裝電梯嗎？</div>
+      <div class="faq-a">常見型式有「外牆附掛型」（需有法定空地）和「室內增設型」（梯廳型或穿越型）。哪種適合需到現場勘查建築基地條件才能判斷。勘查完全免費，來電或填表預約即可安排。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">從開始到完工需要多久？</div>
+      <div class="faq-a">依台北市實際成功案例，前期住戶共識整合至少需 4 個月以上，全程（含建照申請、工程施工、補助請領）約需 1.5 至 2 年。越早啟動評估，越能在補助年度受理期間內完成申請，掌握補助額度。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">加裝電梯後房屋稅會增加嗎？</div>
+      <div class="faq-a">台北市自 2019 年起，已取消 5 層樓以下房屋設有電梯的加價課稅規定。加裝電梯反而可提升房屋市值，根據報導，老公寓加裝電梯後，行情可增值約 10% 以上，也等同從「公寓」升等為「華廈」，可向地政單位申辦產權登記。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">一定要成立管委會才能申請嗎？</div>
+      <div class="faq-a">是的，申請補助時需檢附公寓大廈管理組織報備證明。但不一定要成立「管理委員會」，也可以推選「管理負責人」（只需 2 位以上區分所有權人書面簽署推選），程序較簡便，適合戶數較少的公寓。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">諮詢或勘查需要付費嗎？</div>
+      <div class="faq-a">初步線上諮詢與到府勘查估價均完全免費。在您確認有意願、正式進入規劃設計階段之前，不會產生任何費用。歡迎先填表或來電，不需要有充分的把握才詢問。</div>
+    </div>
+  </div>
+</section>
+
+<!-- INQUIRY FORM -->
+<section class="inquiry" id="inquiry">
+  <div class="form-layout">
+    <div>
+      <span class="section-tag">免費諮詢</span>
+      <h2>填表後<br>王專案將於<br>24 小時內聯繫</h2>
+      <p class="form-intro">
+        填寫以下資訊，讓我在聯繫您之前先了解您的狀況，節省雙方時間。<br><br>
+        <strong>到府勘查完全免費</strong>，無論最後是否推動，諮詢過程不會有任何費用壓力。<br><br>
+        台北市補助每年度受理期間有限，建議早規劃、早申請。
+      </p>
+      <div class="contact-direct">
+        <p>或直接來電</p>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="phone-wrap" style="width:44px;height:44px;">
+            <div class="ring" style="width:30px;height:30px;"></div>
+            <div class="ring" style="width:38px;height:38px;animation-delay:.25s;"></div>
+            <div class="ring" style="width:44px;height:44px;animation-delay:.5s;"></div>
+            <svg class="phone-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8975a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.8 12.8 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.8 12.8 0 002.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+          </div>
+          <a href="tel:0928086897">0928-086-897</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <!-- Formspree 表單：送出後自動寄信到 yuchunwang17@gmail.com -->
+      <!-- 步驟：到 https://formspree.io 註冊後，新增表單取得你專屬的 action URL，替換下方 YOUR_FORM_ID -->
+      <form class="form-fields" id="inquiryForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="_subject" value="【王專案】新電梯詢價申請">
+        <input type="hidden" name="_language" value="zh">
+        <div class="form-row">
+          <div class="field-group">
+            <label>姓名</label>
+            <input type="text" name="name" placeholder="王先生 / 陳小姐" required>
+          </div>
+          <div class="field-group">
+            <label>聯絡電話</label>
+            <input type="tel" name="phone" placeholder="09XX-XXX-XXX" required>
+          </div>
+        </div>
+        <div class="field-group">
+          <label>建築地址（縣市區即可）</label>
+          <input type="text" name="address" placeholder="例：台北市大安區">
+        </div>
+        <div class="form-row">
+          <div class="field-group">
+            <label>建築樓層數</label>
+            <select name="floors">
+              <option value="">請選擇</option>
+              <option>4 樓</option>
+              <option>5 樓</option>
+              <option>6 樓</option>
+              <option>7 樓以上</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label>屋齡（約幾年）</label>
+            <select name="age">
+              <option value="">請選擇</option>
+              <option>20–30 年</option>
+              <option>30–40 年</option>
+              <option>40–50 年</option>
+              <option>50 年以上</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-group">
+          <label>住戶共識狀況</label>
+          <select name="consensus">
+            <option value="">請選擇</option>
+            <option>尚未討論</option>
+            <option>部分住戶有意願</option>
+            <option>多數住戶同意</option>
+            <option>已達共識待推動</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label>其他說明（選填）</label>
+          <textarea name="message" placeholder="例：是否已有管委會、特殊結構狀況、或想了解的問題…"></textarea>
+        </div>
+        <button type="submit" class="btn-submit" id="submitBtn">送出諮詢申請</button>
+        <div class="success-msg" id="successMsg">✓ 已收到您的諮詢，王專案將盡快與您聯繫。</div>
+        <div class="error-msg" id="errorMsg">⚠ 送出失敗，請直接來電 0928-086-897 或稍後再試。</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">王專案 · 電梯加蓋顧問</div>
+  <div class="footer-note">服務範圍：台北市 · 新北市 &nbsp;|&nbsp; 0928-086-897</div>
+</footer>
+
+<script>
+const form = document.getElementById('inquiryForm');
+const btn = document.getElementById('submitBtn');
+const successMsg = document.getElementById('successMsg');
+const errorMsg = document.getElementById('errorMsg');
+
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  btn.disabled = true;
+  btn.textContent = '送出中…';
+  errorMsg.style.display = 'none';
+
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      successMsg.style.display = 'block';
+      btn.textContent = '已送出 ✓';
+      form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
+    } else {
+      throw new Error('送出失敗');
+    }
+  } catch {
+    btn.disabled = false;
+    btn.textContent = '送出諮詢申請';
+    errorMsg.style.display = 'block';
+  }
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    e.preventDefault();
+    const t = document.querySelector(this.getAttribute('href'));
+    if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+</body>
+</html>
