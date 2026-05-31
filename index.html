@@ -17,38 +17,38 @@
   --white: #fdfcf9; --border: rgba(26,26,24,0.12);
 }
 html { scroll-behavior: smooth; }
-body { font-family: 'Noto Sans TC', sans-serif; background: var(--white); color: var(--ink); font-weight: 300; line-height: 1.8; font-size: 15px; }
+body { font-family: 'Noto Sans TC', sans-serif; background: var(--white); color: var(--ink); font-weight: 300; line-height: 1.8; font-size: 22px; }
 
 /* ── HEADER ── */
 header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(253,252,249,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 2rem; height: 60px; display: flex; align-items: center; justify-content: space-between; }
-.logo { font-family: 'Noto Serif TC', serif; font-size: 15px; font-weight: 600; letter-spacing: 0.15em; color: var(--ink); }
+.logo { font-family: 'Noto Serif TC', serif; font-size: 22px; font-weight: 600; letter-spacing: 0.15em; color: var(--ink); }
 .logo span { color: var(--gold); margin-left: 6px; }
-.header-cta { background: var(--ink); color: var(--white); border: none; padding: 8px 20px; font-family: 'Noto Sans TC', sans-serif; font-size: 13px; font-weight: 400; letter-spacing: 0.08em; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s; }
+.header-cta { background: var(--ink); color: var(--white); border: none; padding: 8px 20px; font-family: 'Noto Sans TC', sans-serif; font-size: 20px; font-weight: 400; letter-spacing: 0.08em; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s; }
 .header-cta:hover { background: var(--gold); }
 
 /* ── HERO ── */
 .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 60px; }
 .hero-left { background: var(--cream); display: flex; flex-direction: column; justify-content: center; padding: 80px 60px 80px 80px; position: relative; overflow: hidden; }
 .hero-left::before { content: '電梯'; position: absolute; top: -20px; right: -30px; font-family: 'Noto Serif TC', serif; font-size: 180px; font-weight: 700; color: rgba(26,26,24,0.04); line-height: 1; pointer-events: none; user-select: none; }
-.eyebrow { font-size: 11px; letter-spacing: 0.25em; color: var(--gold); text-transform: uppercase; margin-bottom: 28px; font-weight: 500; }
-h1 { font-family: 'Noto Serif TC', serif; font-size: clamp(32px, 4vw, 52px); font-weight: 700; line-height: 1.3; margin-bottom: 24px; letter-spacing: 0.02em; }
+.eyebrow { font-size: 16px; letter-spacing: 0.25em; color: var(--gold); text-transform: uppercase; margin-bottom: 28px; font-weight: 500; }
+h1 { font-family: 'Noto Serif TC', serif; font-size: clamp(48px, 4vw, 78px); font-weight: 700; line-height: 1.3; margin-bottom: 24px; letter-spacing: 0.02em; }
 h1 em { font-style: normal; color: var(--gold); border-bottom: 2px solid var(--gold-light); }
-.hero-desc { color: var(--ink-light); font-size: 15px; line-height: 1.9; max-width: 380px; margin-bottom: 48px; }
+.hero-desc { color: var(--ink-light); font-size: 22px; line-height: 1.9; max-width: 380px; margin-bottom: 48px; }
 .hero-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
-.btn-primary { background: var(--ink); color: var(--white); border: none; padding: 14px 32px; font-family: 'Noto Sans TC', sans-serif; font-size: 14px; font-weight: 400; letter-spacing: 0.1em; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s, transform 0.15s; }
+.btn-primary { background: var(--ink); color: var(--white); border: none; padding: 14px 32px; font-family: 'Noto Sans TC', sans-serif; font-size: 21px; font-weight: 400; letter-spacing: 0.1em; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s, transform 0.15s; }
 .btn-primary:hover { background: var(--gold); transform: translateY(-1px); }
-.btn-tel { color: var(--ink); text-decoration: none; font-size: 14px; letter-spacing: 0.05em; border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: border-color 0.2s, color 0.2s; }
+.btn-tel { color: var(--ink); text-decoration: none; font-size: 21px; letter-spacing: 0.05em; border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: border-color 0.2s, color 0.2s; }
 .btn-tel:hover { color: var(--gold); border-color: var(--gold); }
 .hero-right { background: var(--ink); display: flex; flex-direction: column; justify-content: center; padding: 60px; position: relative; overflow: hidden; gap: 48px; align-items: center; }
 .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.1); width: 100%; }
-.stat-item { background: var(--ink); padding: 28px 24px; border: 1px solid rgba(255,255,255,0.06); }
-.stat-num { font-family: 'Noto Serif TC', serif; font-size: 36px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 8px; }
-.stat-label { font-size: 12px; color: rgba(255,255,255,0.5); letter-spacing: 0.1em; }
+.stat-item { background: var(--ink); padding: 24px 20px; border: 1px solid rgba(255,255,255,0.06); white-space: nowrap; }
+.stat-num { font-family: 'Noto Serif TC', serif; font-size: 42px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 8px; white-space: nowrap; }
+.stat-label { font-size: 16px; color: rgba(255,255,255,0.5); letter-spacing: 0.05em; white-space: nowrap; }
 
 /* ── SECTION ── */
 section { padding: 100px 80px; }
-.section-tag { font-size: 12px; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; font-weight: 500; margin-bottom: 16px; display: block; }
-h2 { font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3.5vw, 44px); font-weight: 700; line-height: 1.4; margin-bottom: 48px; letter-spacing: 0.02em; }
+.section-tag { font-size: 18px; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; font-weight: 500; margin-bottom: 16px; display: block; }
+h2 { font-family: 'Noto Serif TC', serif; font-size: clamp(42px, 3.5vw, 66px); font-weight: 700; line-height: 1.4; margin-bottom: 48px; letter-spacing: 0.02em; }
 
 /* ── 補助資格 ── */
 .qualify { background: var(--cream); }
@@ -57,32 +57,32 @@ h2 { font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3.5vw, 44px); f
 .qualify-card { background: var(--white); border: 1px solid var(--border); padding: 24px 28px; }
 .qualify-card.no { border-left: 3px solid #c94f4f; }
 .qualify-card.yes { border-left: 3px solid var(--gold); }
-.qualify-label { font-size: 10px; letter-spacing: 0.2em; font-weight: 500; margin-bottom: 6px; }
+.qualify-label { font-size: 15px; letter-spacing: 0.2em; font-weight: 500; margin-bottom: 6px; }
 .qualify-card.yes .qualify-label { color: var(--gold); }
 .qualify-card.no .qualify-label { color: #c94f4f; }
-.qualify-card strong { display: block; font-size: 14px; font-weight: 500; margin-bottom: 4px; }
-.qualify-card p { font-size: 13px; color: var(--ink-muted); line-height: 1.7; }
+.qualify-card strong { display: block; font-size: 21px; font-weight: 500; margin-bottom: 4px; }
+.qualify-card p { font-size: 20px; color: var(--ink-muted); line-height: 1.7; }
 
 /* ── 費用 ── */
 .cost { background: var(--white); }
 .cost-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 40px; }
 .cost-item { background: var(--white); padding: 32px 28px; text-align: center; }
-.cost-type { font-size: 12px; letter-spacing: 0.15em; color: var(--ink-muted); margin-bottom: 12px; }
-.cost-range { font-family: 'Noto Serif TC', serif; font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
-.cost-detail { font-size: 12px; color: var(--ink-muted); line-height: 1.6; }
+.cost-type { font-size: 18px; letter-spacing: 0.15em; color: var(--ink-muted); margin-bottom: 12px; }
+.cost-range { font-family: 'Noto Serif TC', serif; font-size: 33px; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+.cost-detail { font-size: 18px; color: var(--ink-muted); line-height: 1.6; }
 .subsidy-bar { background: var(--cream); border: 1px solid var(--border); padding: 28px 36px; display: flex; align-items: center; gap: 24px; }
-.subsidy-bar .s-label { font-size: 11px; letter-spacing: 0.2em; color: var(--gold); font-weight: 500; min-width: 80px; }
-.subsidy-bar .s-body strong { font-size: 16px; font-weight: 500; display: block; margin-bottom: 4px; }
-.subsidy-bar .s-body p { font-size: 13px; color: var(--ink-muted); }
+.subsidy-bar .s-label { font-size: 16px; letter-spacing: 0.2em; color: var(--gold); font-weight: 500; min-width: 80px; }
+.subsidy-bar .s-body strong { font-size: 24px; font-weight: 500; display: block; margin-bottom: 4px; }
+.subsidy-bar .s-body p { font-size: 20px; color: var(--ink-muted); }
 
 /* ── About ── */
 .about { background: var(--cream); display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
 .about-text p { color: var(--ink-light); margin-bottom: 20px; line-height: 1.9; }
 .about-points { display: flex; flex-direction: column; gap: 28px; }
 .point { display: flex; gap: 20px; align-items: flex-start; }
-.point-num { font-family: 'Noto Serif TC', serif; font-size: 28px; font-weight: 700; color: var(--cream-dark); line-height: 1; min-width: 36px; }
-.point-body strong { display: block; font-size: 14px; font-weight: 500; margin-bottom: 4px; color: var(--ink); }
-.point-body p { font-size: 13px; color: var(--ink-muted); line-height: 1.7; }
+.point-num { font-family: 'Noto Serif TC', serif; font-size: 42px; font-weight: 700; color: var(--cream-dark); line-height: 1; min-width: 36px; }
+.point-body strong { display: block; font-size: 21px; font-weight: 500; margin-bottom: 4px; color: var(--ink); }
+.point-body p { font-size: 20px; color: var(--ink-muted); line-height: 1.7; }
 
 /* ── Process ── */
 .process { background: var(--white); }
@@ -90,45 +90,46 @@ h2 { font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3.5vw, 44px); f
 .process-steps::before { content: ''; position: absolute; top: 28px; left: 10%; right: 10%; height: 1px; background: var(--border); z-index: 0; }
 .step { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 12px; position: relative; z-index: 1; }
 .step-icon { width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; background: var(--white); border: 1px solid var(--border); border-radius: 50%; margin-bottom: 20px; }
-.step-title { font-size: 13px; font-weight: 500; margin-bottom: 6px; letter-spacing: 0.05em; }
-.step-desc { font-size: 11px; color: var(--ink-muted); line-height: 1.6; }
+.step-title { font-size: 20px; font-weight: 500; margin-bottom: 6px; letter-spacing: 0.05em; }
+.step-desc { font-size: 16px; color: var(--ink-muted); line-height: 1.6; }
 
 /* ── FAQ ── */
 .faq { background: var(--cream); }
 .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); }
 .faq-item { background: var(--cream); padding: 32px 36px; }
-.faq-q { font-family: 'Noto Serif TC', serif; font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--ink); line-height: 1.5; }
-.faq-a { font-size: 13px; color: var(--ink-light); line-height: 1.8; }
+.faq-q { font-family: 'Noto Serif TC', serif; font-size: 22px; font-weight: 600; margin-bottom: 12px; color: var(--ink); line-height: 1.5; }
+.faq-a { font-size: 20px; color: var(--ink-light); line-height: 1.8; }
+.faq-a mark { background: none; color: var(--ink); font-weight: 500; border-bottom: 2px solid var(--gold); padding-bottom: 1px; }
 
 /* ── Form ── */
 .inquiry { background: var(--ink); padding: 100px 80px; }
 .inquiry h2 { color: var(--white); }
 .inquiry .section-tag { color: var(--gold); }
 .form-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-.form-intro { color: rgba(255,255,255,0.55); line-height: 1.9; font-size: 14px; }
+.form-intro { color: rgba(255,255,255,0.55); line-height: 1.9; font-size: 21px; }
 .form-intro strong { color: var(--gold); font-weight: 500; }
 .contact-direct { margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); }
-.contact-direct p { font-size: 12px; letter-spacing: 0.15em; color: rgba(255,255,255,0.3); margin-bottom: 12px; }
-.contact-direct a { color: var(--white); text-decoration: none; font-size: 22px; font-family: 'Noto Serif TC', serif; font-weight: 600; letter-spacing: 0.05em; transition: color 0.2s; }
+.contact-direct p { font-size: 18px; letter-spacing: 0.15em; color: rgba(255,255,255,0.3); margin-bottom: 12px; }
+.contact-direct a { color: var(--white); text-decoration: none; font-size: 33px; font-family: 'Noto Serif TC', serif; font-weight: 600; letter-spacing: 0.05em; transition: color 0.2s; }
 .contact-direct a:hover { color: var(--gold); }
 .form-fields { display: flex; flex-direction: column; gap: 16px; }
 .field-group { display: flex; flex-direction: column; gap: 6px; }
-.field-group label { font-size: 11px; letter-spacing: 0.2em; color: rgba(255,255,255,0.4); }
-.field-group input, .field-group select, .field-group textarea { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: var(--white); padding: 12px 16px; font-family: 'Noto Sans TC', sans-serif; font-size: 14px; font-weight: 300; outline: none; transition: border-color 0.2s; width: 100%; appearance: none; }
+.field-group label { font-size: 16px; letter-spacing: 0.2em; color: rgba(255,255,255,0.4); }
+.field-group input, .field-group select, .field-group textarea { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: var(--white); padding: 12px 16px; font-family: 'Noto Sans TC', sans-serif; font-size: 21px; font-weight: 300; outline: none; transition: border-color 0.2s; width: 100%; appearance: none; }
 .field-group select option { background: #1a1a18; color: #fff; }
 .field-group input::placeholder, .field-group textarea::placeholder { color: rgba(255,255,255,0.2); }
 .field-group input:focus, .field-group select:focus, .field-group textarea:focus { border-color: var(--gold); }
 .field-group textarea { resize: vertical; min-height: 100px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.btn-submit { background: var(--gold); color: var(--ink); border: none; padding: 16px 40px; font-family: 'Noto Sans TC', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 0.12em; cursor: pointer; width: 100%; margin-top: 8px; transition: background 0.2s, transform 0.15s; }
+.btn-submit { background: var(--gold); color: var(--ink); border: none; padding: 16px 40px; font-family: 'Noto Sans TC', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: 0.12em; cursor: pointer; width: 100%; margin-top: 8px; transition: background 0.2s, transform 0.15s; }
 .btn-submit:hover { background: var(--gold-light); transform: translateY(-1px); }
 .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
-.success-msg { display: none; background: rgba(184,151,90,0.15); border: 1px solid var(--gold); padding: 16px 20px; color: var(--gold); font-size: 13px; letter-spacing: 0.05em; text-align: center; margin-top: 12px; }
-.error-msg { display: none; background: rgba(201,79,79,0.15); border: 1px solid #c94f4f; padding: 16px 20px; color: #f08080; font-size: 13px; letter-spacing: 0.05em; text-align: center; margin-top: 12px; }
+.success-msg { display: none; background: rgba(184,151,90,0.15); border: 1px solid var(--gold); padding: 16px 20px; color: var(--gold); font-size: 20px; letter-spacing: 0.05em; text-align: center; margin-top: 12px; }
+.error-msg { display: none; background: rgba(201,79,79,0.15); border: 1px solid #c94f4f; padding: 16px 20px; color: #f08080; font-size: 20px; letter-spacing: 0.05em; text-align: center; margin-top: 12px; }
 
 footer { background: #111; padding: 40px 80px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.06); }
-.footer-logo { font-family: 'Noto Serif TC', serif; font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.5); letter-spacing: 0.15em; }
-.footer-note { font-size: 11px; color: rgba(255,255,255,0.2); letter-spacing: 0.1em; }
+.footer-logo { font-family: 'Noto Serif TC', serif; font-size: 21px; font-weight: 600; color: rgba(255,255,255,0.5); letter-spacing: 0.15em; }
+.footer-note { font-size: 16px; color: rgba(255,255,255,0.2); letter-spacing: 0.1em; }
 
 /* ── 動畫 ICONS ── */
 
@@ -163,7 +164,7 @@ footer { background: #111; padding: 40px 80px; display: flex; justify-content: s
 
 /* 金幣 */
 .coin-base { position: relative; width: 44px; height: 52px; display: flex; align-items: flex-end; justify-content: center; }
-.coin-main { width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: var(--gold); background: rgba(184,151,90,.08); }
+.coin-main { width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; color: var(--gold); background: rgba(184,151,90,.08); }
 .coin-fly { position: absolute; width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid var(--gold); background: rgba(184,151,90,.15); display: flex; align-items: center; justify-content: center; font-size: 9px; color: var(--gold); font-weight: 700; animation: coinUp 2.2s ease-in-out infinite; }
 .coin-fly:nth-child(2){animation-delay:.3s}
 .coin-fly:nth-child(3){animation-delay:.6s}
@@ -174,7 +175,7 @@ footer { background: #111; padding: 40px 80px; display: flex; justify-content: s
 .env-body { width: 100%; height: 100%; border: 2px solid var(--gold); border-radius: 3px; position: relative; }
 .env-flap { position: absolute; top: -1px; left: -1px; right: -1px; height: 20px; border-bottom: 2px solid var(--gold); clip-path: polygon(0 0,50% 100%,100% 0); background: rgba(184,151,90,.15); }
 .env-text { position: absolute; bottom: 4px; left: 0; right: 0; text-align: center; font-size: 9px; color: var(--gold); font-weight: 500; letter-spacing: .05em; }
-.env-arrow { position: absolute; top: -16px; right: -6px; font-size: 14px; color: var(--gold); animation: envArrow 3s ease-in-out infinite; }
+.env-arrow { position: absolute; top: -16px; right: -6px; font-size: 21px; color: var(--gold); animation: envArrow 3s ease-in-out infinite; }
 @keyframes envShake { 0%,60%,100%{transform:rotate(0)}65%{transform:rotate(-3deg)}70%{transform:rotate(3deg)}75%{transform:rotate(-2deg)}80%{transform:rotate(0)} }
 @keyframes envArrow { 0%,50%{transform:translate(0,0);opacity:0}62%{transform:translate(0,0);opacity:1}82%{transform:translate(8px,-8px);opacity:1}100%{transform:translate(14px,-14px);opacity:0} }
 
@@ -224,7 +225,7 @@ footer { background: #111; padding: 40px 80px; display: flex; justify-content: s
     </p>
     <div class="hero-actions">
       <a href="#inquiry" class="btn-primary">立即免費估價</a>
-      <a href="tel:0928086897" class="btn-tel">📞 0928-086-897</a>
+      <a href="https://line.me/R/ti/p/@515mlwgl" target="_blank" class="btn-tel">💬 LINE：@515mlwgl</a>
     </div>
   </div>
   <div class="hero-right">
@@ -236,7 +237,7 @@ footer { background: #111; padding: 40px 80px; display: flex; justify-content: s
           <div class="elevator-door-r"></div>
         </div>
       </div>
-      <span style="font-size:11px;color:rgba(255,255,255,0.3);letter-spacing:.15em;">ELEVATOR</span>
+      <span style="font-size: 16px;color:rgba(255,255,255,0.3);letter-spacing:.15em;">ELEVATOR</span>
     </div>
     <div class="stats-grid">
       <div class="stat-item">
@@ -266,14 +267,14 @@ footer { background: #111; padding: 40px 80px; display: flex; justify-content: s
       <span class="section-tag">申請資格</span>
       <h2>您的大樓<br>符合條件嗎？</h2>
       <p style="color:var(--ink-light);line-height:1.9;margin-bottom:20px;">依台北市補助規範，符合以下條件的老舊公寓均可申請電梯增設補助。不確定是否符合，歡迎直接詢問王專案，免費為您初步評估。</p>
-      <p style="color:var(--ink-muted);font-size:13px;line-height:1.9;">新北市亦有相關補助方案，詳情可來電諮詢。</p>
+      <p style="color:var(--ink-muted);font-size: 20px;line-height:1.9;">新北市亦有相關補助方案，詳情可來電諮詢。</p>
 
       <!-- 補助金額說明 -->
       <div style="margin-top:32px;padding:24px 28px;background:var(--cream-dark);border-left:3px solid var(--gold);">
-        <div style="font-size:11px;letter-spacing:.2em;color:var(--gold);font-weight:500;margin-bottom:10px;">台北市補助額度</div>
-        <p style="font-size:14px;font-weight:500;color:var(--ink);margin-bottom:8px;">一般案件：每棟最高補助 300 萬元，最高補助 50% 工程費用</p>
-        <p style="font-size:13px;color:var(--ink-muted);line-height:1.8;">配合拆除法定空地建物修繕者可提高至 <strong style="color:var(--ink);">60%</strong>。<br>
-        公告劃定之<strong style="color:var(--ink);">整建住宅</strong>或<strong style="color:var(--ink);">山坡地開發地區</strong>申請案，補助額度最高可達 <strong style="color:var(--gold);font-size:15px;">80%</strong>，且不受 300 萬元上限限制，適用台北市部分山坡地、整宅社區等特定區域。</p>
+        <div style="font-size: 16px;letter-spacing:.2em;color:var(--gold);font-weight:500;margin-bottom:10px;">台北市補助額度</div>
+        <p style="font-size: 21px;font-weight:500;color:var(--ink);margin-bottom:8px;">一般案件：每棟最高補助 300 萬元，最高補助 50% 工程費用</p>
+        <p style="font-size: 20px;color:var(--ink-muted);line-height:1.8;">配合拆除法定空地建物修繕者可提高至 <strong style="color:var(--ink);">60%</strong>。<br>
+        公告劃定之<strong style="color:var(--ink);">整建住宅</strong>或<strong style="color:var(--ink);">山坡地開發地區</strong>申請案，補助額度最高可達 <strong style="color:var(--gold);font-size: 22px;">80%</strong>，且不受 300 萬元上限限制，適用台北市部分山坡地、整宅社區等特定區域。</p>
       </div>
     </div>
 
@@ -298,12 +299,12 @@ footer { background: #111; padding: 40px 80px; display: flex; justify-content: s
 
       <!-- 不符合條件四項 -->
       <div style="margin-top:16px;background:var(--white);border:1px solid var(--border);border-left:3px solid #c94f4f;padding:24px 28px;">
-        <div style="font-size:11px;letter-spacing:.2em;color:#c94f4f;font-weight:500;margin-bottom:14px;">✗ 以下情形不得申請補助</div>
+        <div style="font-size: 16px;letter-spacing:.2em;color:#c94f4f;font-weight:500;margin-bottom:14px;">✗ 以下情形不得申請補助</div>
         <ol style="padding-left:18px;display:flex;flex-direction:column;gap:10px;">
-          <li style="font-size:13px;color:var(--ink-muted);line-height:1.7;">經公告列管須拆除重建之<strong style="color:var(--ink-light);">海砂屋</strong>（依《臺北市高氯離子混凝土建築物善後處理自治條例》）</li>
-          <li style="font-size:13px;color:var(--ink-muted);line-height:1.7;">同一棟建築物已依其他法令或本規範<strong style="color:var(--ink-light);">獲核准補助</strong>者</li>
-          <li style="font-size:13px;color:var(--ink-muted);line-height:1.7;">申請補助前<strong style="color:var(--ink-light);">已取得增設電梯使用許可</strong>者</li>
-          <li style="font-size:13px;color:var(--ink-muted);line-height:1.7;">整棟建築物所有權<strong style="color:var(--ink-light);">屬單一所有權人</strong>持有者</li>
+          <li style="font-size: 20px;color:var(--ink-muted);line-height:1.7;">經公告列管須拆除重建之<strong style="color:var(--ink-light);">海砂屋</strong>（依《臺北市高氯離子混凝土建築物善後處理自治條例》）</li>
+          <li style="font-size: 20px;color:var(--ink-muted);line-height:1.7;">同一棟建築物已依其他法令或本規範<strong style="color:var(--ink-light);">獲核准補助</strong>者</li>
+          <li style="font-size: 20px;color:var(--ink-muted);line-height:1.7;">申請補助前<strong style="color:var(--ink-light);">已取得增設電梯使用許可</strong>者</li>
+          <li style="font-size: 20px;color:var(--ink-muted);line-height:1.7;">整棟建築物所有權<strong style="color:var(--ink-light);">屬單一所有權人</strong>持有者</li>
         </ol>
       </div>
     </div>
@@ -517,35 +518,35 @@ footer { background: #111; padding: 40px 80px; display: flex; justify-content: s
   <div class="faq-grid">
     <div class="faq-item">
       <div class="faq-q">需要全體住戶 100% 同意嗎？</div>
-      <div class="faq-a">申請建築許可（雜項執照）只需土地及建物所有權人「人數過半且產權面積過半」同意即可，無需 100% 全體同意。若應有部分合計超過三分之二，更可免計人數。申請補助則原則需全體同意，但可以區分所有權人會議決議紀錄代替。</div>
+      <div class="faq-a">申請建築許可（雜項執照）只需土地及建物所有權人「<mark>人數過半且產權面積過半</mark>」同意即可，<mark>無需 100% 全體同意</mark>。若應有部分合計超過三分之二，更可免計人數。申請補助則原則需全體同意，但可以<mark>區分所有權人會議決議紀錄</mark>代替。</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">費用大概是多少？住戶怎麼分攤？</div>
-      <div class="faq-a">以5層樓3人座電梯為例，總工程費約 500–700 萬元。台北市補助最高 300 萬元（約 50%），其餘由住戶自行分攤。分攤方式可依共有應有部分比例，或由住戶協議，例如頂樓住戶多分攤、其餘均分等，均有實際成功案例可參考。</div>
+      <div class="faq-a">以5層樓3人座電梯為例，總工程費約 <mark>500–700 萬元</mark>。台北市補助最高 <mark>300 萬元（約 50%）</mark>，其餘由住戶自行分攤。分攤方式可依共有應有部分比例，或由住戶協議，例如頂樓住戶多分攤、其餘<mark>均分</mark>等，均有實際成功案例可參考。</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">台北市補助申請流程是什麼？</div>
-      <div class="faq-a">取得建築許可後，備齊申請書、所有權人同意書（或區分所有權人會議紀錄）、管委會報備文件、廠商報價單等，向台北市都市更新處提出申請。審查通過後核發補助核准函，工程完工取得使用許可後再向更新處請領補助款。</div>
+      <div class="faq-a">取得建築許可後，備齊<mark>申請書、所有權人同意書、管委會報備文件、廠商報價單</mark>等，向<mark>台北市都市更新處</mark>提出申請。審查通過後核發補助核准函，工程完工取得使用許可後再向更新處<mark>請領補助款</mark>。</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">我的大樓結構適合加裝電梯嗎？</div>
-      <div class="faq-a">常見型式有「外牆附掛型」（需有法定空地）和「室內增設型」（梯廳型或穿越型）。哪種適合需到現場勘查建築基地條件才能判斷。勘查完全免費，來電或填表預約即可安排。</div>
+      <div class="faq-a">常見型式有「<mark>外牆附掛型</mark>」（需有法定空地）和「<mark>室內增設型</mark>」（梯廳型或穿越型）。哪種適合需到現場勘查建築基地條件才能判斷。<mark>勘查完全免費</mark>，來電或填表預約即可安排。</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">從開始到完工需要多久？</div>
-      <div class="faq-a">依台北市實際成功案例，前期住戶共識整合至少需 4 個月以上，全程（含建照申請、工程施工、補助請領）約需 1.5 至 2 年。越早啟動評估，越能在補助年度受理期間內完成申請，掌握補助額度。</div>
+      <div class="faq-a">依台北市實際成功案例，前期住戶共識整合至少需 <mark>4 個月以上</mark>，全程（含建照申請、工程施工、補助請領）約需 <mark>1.5 至 2 年</mark>。越早啟動評估，越能在補助年度受理期間內完成申請，<mark>掌握補助額度</mark>。</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">加裝電梯後房屋稅會增加嗎？</div>
-      <div class="faq-a">台北市自 2019 年起，已取消 5 層樓以下房屋設有電梯的加價課稅規定。加裝電梯反而可提升房屋市值，根據報導，老公寓加裝電梯後，行情可增值約 10% 以上，也等同從「公寓」升等為「華廈」，可向地政單位申辦產權登記。</div>
+      <div class="faq-a">台北市自 <mark>2019 年起</mark>，已<mark>取消 5 層樓以下房屋設有電梯的加價課稅</mark>規定。加裝電梯反而可提升房屋市值，老公寓加裝電梯後，行情可<mark>增值約 10% 以上</mark>，也等同從「公寓」升等為「<mark>華廈</mark>」，可向地政單位申辦產權登記。</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">一定要成立管委會才能申請嗎？</div>
-      <div class="faq-a">是的，申請補助時需檢附公寓大廈管理組織報備證明。但不一定要成立「管理委員會」，也可以推選「管理負責人」（只需 2 位以上區分所有權人書面簽署推選），程序較簡便，適合戶數較少的公寓。</div>
+      <div class="faq-a">是的，申請補助時需檢附<mark>公寓大廈管理組織報備證明</mark>。但不一定要成立「管理委員會」，也可以推選「<mark>管理負責人</mark>」（只需 <mark>2 位以上</mark>區分所有權人書面簽署推選），程序較簡便，適合戶數較少的公寓。</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">諮詢或勘查需要付費嗎？</div>
-      <div class="faq-a">初步線上諮詢與到府勘查估價均完全免費。在您確認有意願、正式進入規劃設計階段之前，不會產生任何費用。歡迎先填表或來電，不需要有充分的把握才詢問。</div>
+      <div class="faq-a">初步線上諮詢與到府勘查估價均<mark>完全免費</mark>。在您確認有意願、正式進入規劃設計階段之前，<mark>不會產生任何費用</mark>。歡迎先填表或來電，不需要有充分的把握才詢問。</div>
     </div>
   </div>
 </section>
@@ -572,7 +573,7 @@ footer { background: #111; padding: 40px 80px; display: flex; justify-content: s
               <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.8 12.8 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.8 12.8 0 002.81.7A2 2 0 0122 14.92z"/>
             </svg>
           </div>
-          <a href="tel:0928086897">0928-086-897</a>
+          <a href="https://line.me/R/ti/p/@515mlwgl" target="_blank">LINE：@515mlwgl</a>
         </div>
       </div>
     </div>
@@ -633,7 +634,7 @@ footer { background: #111; padding: 40px 80px; display: flex; justify-content: s
         </div>
         <button type="submit" class="btn-submit" id="submitBtn">送出諮詢申請</button>
         <div class="success-msg" id="successMsg">✓ 已收到您的諮詢，王專案將盡快與您聯繫。</div>
-        <div class="error-msg" id="errorMsg">⚠ 送出失敗，請直接來電 0928-086-897 或稍後再試。</div>
+        <div class="error-msg" id="errorMsg">⚠ 送出失敗，請透過 LINE @515mlwgl 或稍後再試。</div>
       </form>
     </div>
   </div>
@@ -641,7 +642,7 @@ footer { background: #111; padding: 40px 80px; display: flex; justify-content: s
 
 <footer>
   <div class="footer-logo">王專案 · 電梯加蓋顧問</div>
-  <div class="footer-note">服務範圍：台北市 · 新北市 &nbsp;|&nbsp; 0928-086-897</div>
+  <div class="footer-note">服務範圍：台北市 · 新北市 &nbsp;|&nbsp; LINE：@515mlwgl</div>
 </footer>
 
 <script>
