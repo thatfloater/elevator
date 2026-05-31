@@ -47,8 +47,8 @@ h1 em { font-style: normal; color: var(--gold); border-bottom: 2px solid var(--g
 
 /* ── SECTION ── */
 section { padding: 100px 80px; }
-.section-tag { font-size: 10px; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; font-weight: 500; margin-bottom: 16px; display: block; }
-h2 { font-family: 'Noto Serif TC', serif; font-size: clamp(24px, 3vw, 38px); font-weight: 700; line-height: 1.4; margin-bottom: 48px; letter-spacing: 0.02em; }
+.section-tag { font-size: 12px; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; font-weight: 500; margin-bottom: 16px; display: block; }
+h2 { font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3.5vw, 44px); font-weight: 700; line-height: 1.4; margin-bottom: 48px; letter-spacing: 0.02em; }
 
 /* ── 補助資格 ── */
 .qualify { background: var(--cream); }
@@ -267,61 +267,50 @@ footer { background: #111; padding: 40px 80px; display: flex; justify-content: s
       <h2>您的大樓<br>符合條件嗎？</h2>
       <p style="color:var(--ink-light);line-height:1.9;margin-bottom:20px;">依台北市補助規範，符合以下條件的老舊公寓均可申請電梯增設補助。不確定是否符合，歡迎直接詢問王專案，免費為您初步評估。</p>
       <p style="color:var(--ink-muted);font-size:13px;line-height:1.9;">新北市亦有相關補助方案，詳情可來電諮詢。</p>
+
+      <!-- 補助金額說明 -->
+      <div style="margin-top:32px;padding:24px 28px;background:var(--cream-dark);border-left:3px solid var(--gold);">
+        <div style="font-size:11px;letter-spacing:.2em;color:var(--gold);font-weight:500;margin-bottom:10px;">台北市補助額度</div>
+        <p style="font-size:14px;font-weight:500;color:var(--ink);margin-bottom:8px;">一般案件：每棟最高補助 300 萬元，最高補助 50% 工程費用</p>
+        <p style="font-size:13px;color:var(--ink-muted);line-height:1.8;">配合拆除法定空地建物修繕者可提高至 <strong style="color:var(--ink);">60%</strong>。<br>
+        公告劃定之<strong style="color:var(--ink);">整建住宅</strong>或<strong style="color:var(--ink);">山坡地開發地區</strong>申請案，補助額度最高可達 <strong style="color:var(--gold);font-size:15px;">80%</strong>，且不受 300 萬元上限限制，適用台北市部分山坡地、整宅社區等特定區域。</p>
+      </div>
     </div>
-    <div class="qualify-cards">
-      <div class="qualify-card yes">
-        <div class="qualify-label">✓ 符合條件</div>
-        <strong>6 樓以下無電梯集合住宅</strong>
-        <p>住宅使用比例達全棟 1/2 以上，屋齡達 20 年以上，並持有使用執照或營造執照。</p>
+
+    <div>
+      <div class="qualify-cards">
+        <div class="qualify-card yes">
+          <div class="qualify-label">✓ 符合條件</div>
+          <strong>6 樓以下無電梯集合住宅</strong>
+          <p>住宅使用比例達全棟 1/2 以上，屋齡達 20 年以上，並持有使用執照或營造執照。</p>
+        </div>
+        <div class="qualify-card yes">
+          <div class="qualify-label">✓ 符合條件</div>
+          <strong>非高級住宅</strong>
+          <p>房地總價未達 8,000 萬元（非台北市稅捐稽徵處認定之高級住宅）即符合資格。</p>
+        </div>
+        <div class="qualify-card yes">
+          <div class="qualify-label">✓ 符合條件</div>
+          <strong>住戶過半數同意即可申請建照</strong>
+          <p>申請建築許可只需土地及建物所有權人數及產權面積過半同意，無須 100% 全體同意。</p>
+        </div>
       </div>
-      <div class="qualify-card yes">
-        <div class="qualify-label">✓ 符合條件</div>
-        <strong>非高級住宅</strong>
-        <p>房地總價未達 8,000 萬元（非台北市稅捐稽徵處認定之高級住宅）即符合資格。</p>
-      </div>
-      <div class="qualify-card yes">
-        <div class="qualify-label">✓ 符合條件</div>
-        <strong>住戶過半數同意即可申請建照</strong>
-        <p>申請建築許可只需土地及建物所有權人數及產權面積過半同意，無須 100% 全體同意。</p>
-      </div>
-      <div class="qualify-card no">
-        <div class="qualify-label">✗ 不符合</div>
-        <strong>海砂屋或已獲補助者</strong>
-        <p>已列管須拆除重建的海砂屋，或同一棟建築已獲核准補助者，不得重複申請。</p>
+
+      <!-- 不符合條件四項 -->
+      <div style="margin-top:16px;background:var(--white);border:1px solid var(--border);border-left:3px solid #c94f4f;padding:24px 28px;">
+        <div style="font-size:11px;letter-spacing:.2em;color:#c94f4f;font-weight:500;margin-bottom:14px;">✗ 以下情形不得申請補助</div>
+        <ol style="padding-left:18px;display:flex;flex-direction:column;gap:10px;">
+          <li style="font-size:13px;color:var(--ink-muted);line-height:1.7;">經公告列管須拆除重建之<strong style="color:var(--ink-light);">海砂屋</strong>（依《臺北市高氯離子混凝土建築物善後處理自治條例》）</li>
+          <li style="font-size:13px;color:var(--ink-muted);line-height:1.7;">同一棟建築物已依其他法令或本規範<strong style="color:var(--ink-light);">獲核准補助</strong>者</li>
+          <li style="font-size:13px;color:var(--ink-muted);line-height:1.7;">申請補助前<strong style="color:var(--ink-light);">已取得增設電梯使用許可</strong>者</li>
+          <li style="font-size:13px;color:var(--ink-muted);line-height:1.7;">整棟建築物所有權<strong style="color:var(--ink-light);">屬單一所有權人</strong>持有者</li>
+        </ol>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 費用 -->
-<section class="cost">
-  <span class="section-tag">費用參考</span>
-  <h2>增設電梯大約要多少錢？</h2>
-  <div class="cost-grid">
-    <div class="cost-item">
-      <div class="cost-type">3 人座（5 層樓）</div>
-      <div class="cost-range">約 500–700 萬</div>
-      <div class="cost-detail">機廂空間 90×120 cm<br>昇降機道 150×150 cm</div>
-    </div>
-    <div class="cost-item">
-      <div class="cost-type">6 人座（5 層樓）</div>
-      <div class="cost-range">約 600–800 萬</div>
-      <div class="cost-detail">機廂空間 100×120 cm<br>昇降機道 160×170 cm</div>
-    </div>
-    <div class="cost-item">
-      <div class="cost-type">8 人座（5 層樓）</div>
-      <div class="cost-range">約 700–850 萬</div>
-      <div class="cost-detail">機廂空間 150×150 cm<br>昇降機道 210×220 cm</div>
-    </div>
-  </div>
-  <div class="subsidy-bar">
-    <div class="s-label">台北市補助</div>
-    <div class="s-body">
-      <strong>每棟最高補助 300 萬元，補助比例最高達工程費用 50%</strong>
-      <p>配合拆除法定空地建物整修者可提高至 60%。整建住宅或山坡地地區最高可達 80%。實際費用依個案現場評估而定。</p>
-    </div>
-  </div>
-</section>
+
 
 <!-- About -->
 <section class="about">
@@ -615,7 +604,6 @@ footer { background: #111; padding: 40px 80px; display: flex; justify-content: s
               <option>4 樓</option>
               <option>5 樓</option>
               <option>6 樓</option>
-              <option>7 樓以上</option>
             </select>
           </div>
           <div class="field-group">
